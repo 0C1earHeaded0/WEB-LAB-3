@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        .container-for-container {
+            height: 100%;
+            display: flex;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+        }
+
+        .container p {
+            font-family: monospace;
+            text-align: center;
+            text-shadow: 1px 2px 5px rgb(119, 0, 255);
+            font-size: 24px;
+            animation: 1s infinite alternate appear;
+        }
+
+        @keyframes appear {
+            0% {
+                opacity: 0;
+            }
+
+            25%{
+                opacity: 0.25;
+            }
+
+            50%{
+                opacity: 0.5;
+            }
+
+            75%{
+                opacity: 0.75;
+            }
+
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-for-container">
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tenetur aspernatur maiores veritatis vitae excepturi asperiores sit autem! Fugiat, itaque! Cupiditate qui ducimus temporibus aperiam ad libero consequuntur minus numquam?</p>
+        </div>
+    </div>
+</body>
+</html>

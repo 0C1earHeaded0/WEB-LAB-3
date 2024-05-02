@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.nav {
+    display: flex;
+    background-color: rgb(49, 55, 109);
+}
+
+a {
+    padding: 15px 40px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: rgb(188, 188, 255);
+}
+
+.nav_heads {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    display: flex;
+}
+
+.dropList {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+}
+
+.dropList a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #69698f;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropDown:hover .dropList {
+    display: block;
+}
+
+.dropList a:hover {
+    background-color: #6f8399;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav_heads">
+            <div>
+                <a href="">Главная</a>
+            </div>
+
+            <div class="dropDown">
+                <a href="" class="dropMenu">Меню</a>  
+                <div class="dropList">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                </div>
+            </div>
+            
+             <div>
+                <a href="">Контакты</a>
+             </div>
+
+             <div>
+                <a href="">О нас</a>
+             </div>
+        </div>
+    </div>
+    
+</body>
+</html>

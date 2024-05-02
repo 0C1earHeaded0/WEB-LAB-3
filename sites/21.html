@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        html {
+            height: 100%;
+        }
+
+        body{
+            height: 99%;
+        }
+        .container{
+            display: flex;
+            height: 100%;
+        }
+
+        .anim {
+            margin:auto;
+            background-color: red;
+            border:none;
+            border-radius: 200px;
+            width: 250px;
+            height: 250px;
+            animation: migaet 1s infinite alternate;
+        }
+
+        @keyframes migaet {
+            0% {
+                opacity: 0;
+            }
+
+            100%{
+                opacity: 1;
+            }
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input class="anim" type="text">
+    </div>
+</body>
+</html>
